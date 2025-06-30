@@ -1,59 +1,44 @@
-# 02BindingEvent
+# Angular Contador - Exemplo de Binding e Eventos
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Este projeto demonstra conceitos básicos do Angular, como:
+- Criação de componentes
+- Data binding (ligação de dados)
+- Event binding (ligação de eventos)
+- Uso do `ngModel` para two-way data binding
 
-## Development server
+## Componentes
 
-To start a local development server, run:
+- **AppComponent**: Componente principal, responsável por exibir o componente `<app-contador>`.
+- **ContadorComponent**: Componente que exibe um contador, permite incrementar/decrementar e alterar o nome via input.
 
-```bash
-ng serve
-```
+## Funcionalidades
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Exibe uma saudação personalizada com o nome digitado.
+- Permite alterar o nome em tempo real usando `ngModel`.
+- Botões para incrementar e decrementar o valor do contador.
 
-## Code scaffolding
+## Como rodar o projeto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Instale as dependências:
+   ```sh
+   npm install
+   ```
+2. Inicie o servidor de desenvolvimento:
+   ```sh
+   npm start
+   ```
+3. Acesse `http://localhost:4200` no navegador.
 
-```bash
-ng generate component component-name
-```
+## Estrutura dos arquivos principais
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- `src/app/app.html`: Template principal, inclui `<app-contador>`.
+- `src/app/contador/contador.ts`: Lógica do componente contador.
+- `src/app/contador/contador.html`: Template do contador.
 
-```bash
-ng generate --help
-```
+## Tecnologias
+- Angular
+- TypeScript
 
-## Building
+---
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Projeto para fins de estudo.
