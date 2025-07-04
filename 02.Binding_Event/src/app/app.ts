@@ -6,7 +6,7 @@ import { Contador } from './contador/contador';
   selector: 'app-root',
   imports: [RouterOutlet, Contador],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected title = '02.Binding_Event';
