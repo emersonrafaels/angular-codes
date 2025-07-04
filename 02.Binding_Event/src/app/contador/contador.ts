@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-contador',
   imports: [CommonModule, FormsModule],
   templateUrl: './contador.html',
-  styleUrl: './contador.css'
+  styleUrls: ['./contador.css']
 })
 export class Contador {
   nome: string = 'Emerson';
